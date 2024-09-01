@@ -11,17 +11,17 @@ const Profile = ({ name, tag, location, image, stats }) => {
       </div>
 
       <ul className={s.stats}>
-        <li>
-          <span className={s.satLaibel}>Followers</span>
-          <span>1000</span>
+        <li className={s.statsItem}>
+          <span className={s.statsLaibel}>Followers</span>
+          <span className={s.statsValue}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>2000</span>
+        <li className={s.statsItem}>
+          <span className={s.statsLaibel}>Views</span>
+          <span className={s.statsValue}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>3000</span>
+        <li className={s.statsItem}>
+          <span className={s.statsLaibel}>Likes</span>
+          <span className={s.statsValue}>{stats.likes}</span>
         </li>
       </ul>
     </div>
